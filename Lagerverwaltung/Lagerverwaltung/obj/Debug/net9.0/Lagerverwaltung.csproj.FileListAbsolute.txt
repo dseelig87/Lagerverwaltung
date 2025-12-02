@@ -1,0 +1,15 @@
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\obj\Debug\net9.0\Lagerverwaltung.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\obj\Debug\net9.0\Lagerverwaltung.AssemblyInfoInputs.cache
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\obj\Debug\net9.0\Lagerverwaltung.AssemblyInfo.cs
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\obj\Debug\net9.0\Lagerverwaltung.csproj.CoreCompileInputs.cache
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\obj\Debug\net9.0\Lagerverwaltung.sourcelink.json
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\bin\Debug\net9.0\Lagerverwaltung.exe
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\bin\Debug\net9.0\Lagerverwaltung.deps.json
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\bin\Debug\net9.0\Lagerverwaltung.runtimeconfig.json
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\bin\Debug\net9.0\Lagerverwaltung.dll
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\bin\Debug\net9.0\Lagerverwaltung.pdb
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\obj\Debug\net9.0\Lagerverwaltung.dll
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\obj\Debug\net9.0\refint\Lagerverwaltung.dll
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\obj\Debug\net9.0\Lagerverwaltung.pdb
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\obj\Debug\net9.0\Lagerverwaltung.genruntimeconfig.cache
+C:\Users\Dave\source\repos\AbschlussProjekt\Lagerverwaltung\Lagerverwaltung\Lagerverwaltung\obj\Debug\net9.0\ref\Lagerverwaltung.dll
