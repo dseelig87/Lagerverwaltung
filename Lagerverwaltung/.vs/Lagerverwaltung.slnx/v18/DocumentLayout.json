@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\allemitarbeiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\allemitarbeiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\mitarbeiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\mitarbeiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,24 +38,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Program.cs",
               "RelativeDocumentMoniker": "Lagerverwaltung\\Program.cs",
               "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Program.cs",
               "RelativeToolTip": "Lagerverwaltung\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAqwBYAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T13:35:11.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Material.cs",
               "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Material.cs",
               "RelativeDocumentMoniker": "Lagerverwaltung\\Material.cs",
@@ -47,21 +63,70 @@
               "RelativeToolTip": "Lagerverwaltung\\Material.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T13:35:56.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T13:35:56.076Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Lager.cs",
               "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Lager.cs",
               "RelativeDocumentMoniker": "Lagerverwaltung\\Lager.cs",
               "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Lager.cs",
               "RelativeToolTip": "Lagerverwaltung\\Lager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T13:22:29.015Z",
+              "WhenOpened": "2025-12-02T13:22:29.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Login.cs",
+              "RelativeDocumentMoniker": "Lagerverwaltung\\Login.cs",
+              "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Login.cs",
+              "RelativeToolTip": "Lagerverwaltung\\Login.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T12:23:05.769Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlleMitarbeiter.cs",
+              "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\AlleMitarbeiter.cs",
+              "RelativeDocumentMoniker": "Lagerverwaltung\\AlleMitarbeiter.cs",
+              "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\AlleMitarbeiter.cs",
+              "RelativeToolTip": "Lagerverwaltung\\AlleMitarbeiter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T09:48:45.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Admin.cs",
+              "RelativeDocumentMoniker": "Lagerverwaltung\\Admin.cs",
+              "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Admin.cs",
+              "RelativeToolTip": "Lagerverwaltung\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T10:30:03.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Mitarbeiter.cs",
+              "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Mitarbeiter.cs",
+              "RelativeDocumentMoniker": "Lagerverwaltung\\Mitarbeiter.cs",
+              "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Mitarbeiter.cs",
+              "RelativeToolTip": "Lagerverwaltung\\Mitarbeiter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T10:29:47.038Z"
             }
           ]
         }

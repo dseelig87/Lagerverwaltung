@@ -8,16 +8,16 @@ namespace Lagerverwaltung
 {
     internal class Lager
     {
-        private List<Material> materialListe = new List<Material>();
+        public static List<Material> materialListe = new List<Material>();
 
 
 
 
-        public void MaterialHinzufuegen(string name, int menge, string lagerplatz, string artikelnummer, int bestand)
+        public static void MaterialHinzufuegen(string bezeichnung, int menge, string lagerplatz, string artikelnummer, int bestand)
         {
-            if (!string.IsNullOrWhiteSpace(name) && bestand >= 0)
+            if (!string.IsNullOrWhiteSpace(bezeichnung) && bestand >= 0)
             {
-                materialListe.Add(new Material(name, artikelnummer, lagerplatz, menge, bestand));
+                materialListe.Add(new Material(bezeichnung, artikelnummer, lagerplatz, menge, bestand));
                 Console.WriteLine("Material wurde zum Bestand hinzugefügt");
             }
             else
@@ -29,7 +29,7 @@ namespace Lagerverwaltung
         }
 
 
-        public void MaterialAnzeigen()
+        public static void MaterialAnzeigen()
         {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Green;
@@ -46,7 +46,7 @@ namespace Lagerverwaltung
                 for (int i = 0; i < materialListe.Count; i++)
                 {
                     Material mat = materialListe[i];
-                    Console.WriteLine($"{i + 1}. Name: {mat.Name}, Artikelnummer: {mat.Artikelnummer}, Lagerplatz: {mat.Lagerplatz}, Menge: {mat.Menge}, Bestand: {mat.Bestand}");
+                    Console.WriteLine($"{i + 1}. Name: {mat.Bezeichnug}, Artikelnummer: {mat.Artikelnummer}, Lagerplatz: {mat.Lagerplatz}, Menge: {mat.Menge}, Bestand: {mat.Bestand}");
                 }
         }
     }
