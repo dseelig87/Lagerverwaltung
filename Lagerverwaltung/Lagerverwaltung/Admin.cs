@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace Lagerverwaltung
 {
@@ -9,9 +6,12 @@ namespace Lagerverwaltung
 
     class Admin : AlleMitarbeiter
     {
-       
-        static public string MitarbeiterFile = "Mitarbeiter.json";
+        static public string filePath = "Warenkorb.json";
+        static public string filePath2 = "Mitarbeiter.json";
         static public List<Mitarbeiter> mitarbeiterListe = new List<Mitarbeiter>();
+
+
+
 
         public Admin(string user, string pw) : base(user, pw) { }
         public override bool IstAdmin => true;
@@ -19,7 +19,7 @@ namespace Lagerverwaltung
 
         public void AdminFunktion()
         {
-            LadeMitarbeiter();
+            LadeDaten();
 
             while (true)
             {
@@ -41,7 +41,24 @@ namespace Lagerverwaltung
                         break;
 
                     case "2":
-                        Lager.MaterialHinzufuegen();
+                        Console.Write("Materialbezeichnung: ");
+                        string bezeichnung = Console.ReadLine();
+
+                        Console.Write("Menge: ");
+                        int menge = int.Parse(Console.ReadLine());
+
+                        Console.Write("Lagerplatz: ");
+                        string lagerplatz = Console.ReadLine();
+
+                        Console.Write("Artikelnummer: ");
+                        string artikelnummer = Console.ReadLine();
+
+
+                        Console.Write("Bestand: ");
+                        int bestand = int.Parse(Console.ReadLine());
+
+                        Lager.MaterialHinzufuegen(bezeichnung, menge, lagerplatz, artikelnummer, bestand);
+
                         break;
 
                     case "3":
@@ -57,39 +74,42 @@ namespace Lagerverwaltung
                         break;
 
                     case "6":
-                        SpeichereMitarbeiter();
+                        SpeichereDaten();
                         return;
 
                     default:
+
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Ungültige Auswahl. Bitte erneut versuchen.");
                         Console.ReadKey();
-                        Console.ResetColor();
                         break;
-                }
-            }
-        }
+                        Console.ResetColor();
 
-        static void ZeigeMitarbeiter()
-        {
-            Console.Clear();
-            Console.WriteLine("   Mitarbeiterliste");
-            Console.WriteLine("=======================");
-            if (mitarbeiterListe.Count == 0)
-            {
-                Console.WriteLine("Keine Mitarbeiter vorhanden.");
+                }
+
             }
-            else
+
+            static void ZeigeMitarbeiter()
             {
-                foreach (Mitarbeiter mitarbeiter in mitarbeiterListe)
+                Console.Clear();
+                Console.WriteLine("   Mitarbeiterliste");
+                Console.WriteLine("=======================");
+                if (mitarbeiterListe.Count == 0)
                 {
-                    Console.WriteLine($"\n\nVorname: {mitarbeiter.Mitarbeitername} \nPasswort: {mitarbeiter.Passwort}");
+                    Console.WriteLine("Keine Mitarbeiter vorhanden.");
                 }
+                else
+                {
+                    foreach (Mitarbeiter mitarbeiter in mitarbeiterListe)
+                    {
+                        Console.WriteLine($"\n\nVorname: {mitarbeiter.Mitarbeitername} \nPasswort: {mitarbeiter.Passwort}");
+                    }
+                }
+                Console.WriteLine("\nDrücken Sie eine Taste, um zum Hauptmenü zurückzukehren.");
+                Console.ReadKey();
             }
-            Console.WriteLine("\nDrücken Sie eine Taste, um zum Hauptmenü zurückzukehren.");
-            Console.ReadKey();
-        }
 
+        }
         static void NeuenMitarbeiterAnlegen()
         {
             Console.Clear();
@@ -106,20 +126,20 @@ namespace Lagerverwaltung
 
 
             mitarbeiterListe.Add(neuerMitarbeiter);
-            SpeichereMitarbeiter();
+            SpeichereDaten();
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Mitarbeiter erfolgreich angelegt.");
             Console.ForegroundColor = ConsoleColor.White; Console.WriteLine("\nDrücken Sie eine Taste, um fortzufahren.");
             Console.ReadKey();
         }
 
-        
-        public static void LadeMitarbeiter()
+
+        static void LadeDaten()
         {
-            if (System.IO.File.Exists(MitarbeiterFile))
+            if (System.IO.File.Exists(filePath))
             {
-                string json = System.IO.File.ReadAllText(MitarbeiterFile);
-                mitarbeiterListe = JsonSerializer.Deserialize<List<Mitarbeiter>>(json) ?? new List<Mitarbeiter>();
+                string json = System.IO.File.ReadAllText(filePath);
+                mitarbeiterListe = JsonSerializer.Deserialize<List<Mitarbeiter>>(json);
             }
         }
 
@@ -132,32 +152,24 @@ namespace Lagerverwaltung
                 Console.WriteLine($"{i + 1}. {mitarbeiterListe[i].Mitarbeitername} {mitarbeiterListe[i].Passwort}");
             }
             Console.Write("Geben Sie die Nummer des zu löschenden Mitarbeiters ein: ");
-            if (int.TryParse(Console.ReadLine(), out int idx))
+            int index = int.Parse(Console.ReadLine()) - 1;
+            if (index >= 0 && index < mitarbeiterListe.Count)
             {
-                int index = idx - 1;
-                if (index >= 0 && index < mitarbeiterListe.Count)
-                {
-                    mitarbeiterListe.RemoveAt(index);
-                    SpeichereMitarbeiter();
-                    Console.WriteLine("Mitarbeiter erfolgreich gelöscht. Drücken Sie eine Taste, um fortzufahren.");
-                }
-                else
-                {
-                    Console.WriteLine("Ungültige Nummer. Drücken Sie eine Taste, um fortzufahren.");
-                }
+                mitarbeiterListe.RemoveAt(index);
+                SpeichereDaten();
+                Console.WriteLine("Mitarbeiter erfolgreich gelöscht. Drücken Sie eine Taste, um fortzufahren.");
             }
             else
             {
-                Console.WriteLine("Ungültige Eingabe. Drücken Sie eine Taste, um fortzufahren.");
+                Console.WriteLine("Ungültige Nummer. Drücken Sie eine Taste, um fortzufahren.");
             }
-            Console.ReadKey();
         }
 
-        
-        static void SpeichereMitarbeiter()
+
+        static void SpeichereDaten()
         {
             string json = JsonSerializer.Serialize(mitarbeiterListe, new JsonSerializerOptions { WriteIndented = true });
-            System.IO.File.WriteAllText(MitarbeiterFile, json);
+            System.IO.File.WriteAllText(filePath, json);
         }
     }
 }
