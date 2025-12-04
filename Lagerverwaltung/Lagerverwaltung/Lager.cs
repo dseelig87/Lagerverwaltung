@@ -1,53 +1,51 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lagerverwaltung
 {
     internal class Lager
     {
-        private List<Material> materialListe = new List<Material>();
-
-
-
-
-        public void MaterialHinzufuegen(string name, int menge, string lagerplatz, string artikelnummer, int bestand)
+        public void FuegeMaterialHinzu(string name,  string lagerplatz, string artikelnummer, int bestand)
         {
-            if (!string.IsNullOrWhiteSpace(name) && bestand >= 0)
+            if (string.IsNullOrWhiteSpace(name) || bestand < 0)
             {
-                materialListe.Add(new Material(name, artikelnummer, lagerplatz, menge, bestand));
-                Console.WriteLine("Material wurde zum Bestand hinzugefügt");
-            }
-            else
-            {
-                Console.WriteLine("Ungültige Eingabe. Bitte überprüfen Sie den Namen und den Bestand.");
+                Console.WriteLine("Ungültige Eingabe. Bitte Name und Bestand überprüfen.");
+				Console.WriteLine("\nBitte weiter mit Enter");
+				Console.ReadKey();
+                return;
             }
 
-            Console.ReadKey();
+            Material.MaterialListe.Add(new Material(name, artikelnummer, lagerplatz,  bestand));
+            Material.SpeichereDaten();
+            Console.WriteLine("Material wurde zum Bestand hinzugefügt.");
+			Console.WriteLine("\nBitte weiter mit Enter");
+			Console.ReadKey();
         }
 
-
-        public void MaterialAnzeigen()
+        public void ZeigeMaterial()
         {
+            Material.LadeDaten();
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("          Aktueller Materialbestand:");
             Console.WriteLine("--------------------------------------------------");
             Console.ResetColor();
 
-            if (materialListe.Count == 0)
+            if (Material.MaterialListe.Count == 0)
             {
                 Console.WriteLine("Der Lagerbestand ist leer.");
-
             }
             else
-                for (int i = 0; i < materialListe.Count; i++)
+            {
+                for (int i = 0; i < Material.MaterialListe.Count; i++)
                 {
-                    Material mat = materialListe[i];
-                    Console.WriteLine($"{i + 1}. Name: {mat.Name}, Artikelnummer: {mat.Artikelnummer}, Lagerplatz: {mat.Lagerplatz}, Menge: {mat.Menge}, Bestand: {mat.Bestand}");
+                    var mat = Material.MaterialListe[i];
+                    Console.WriteLine($"{i + 1} | Name: {mat.Bezeichnung}, Artikelnummer: {mat.Artikelnummer}, Lagerplatz: {mat.Lagerplatz}, Bestand: {mat.Bestand}\n");
                 }
+            }
+
+            Console.WriteLine("\nBitte weiter mit Enter");
+            Console.ReadKey();
         }
     }
 }

@@ -1,0 +1,18 @@
+[
+  {
+    "Username": "Dave",
+    "Password": "1234",
+    "IstAdmin": true,
+    "Warenkorb": {
+      "Items": []
+    }
+  },
+  {
+    "Username": "Matze",
+    "Password": "1234",
+    "IstAdmin": false,
+    "Warenkorb": {
+      "Items": []
+    }
+  }
+]

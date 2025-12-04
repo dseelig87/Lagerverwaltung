@@ -1,0 +1,20 @@
+[
+  {
+    "Bezeichnung": "Schrauben",
+    "Artikelnummer": "11111",
+    "Lagerplatz": "12-12-12-12",
+    "Bestand": 3400
+  },
+  {
+    "Bezeichnung": "Paletten",
+    "Artikelnummer": "22222",
+    "Lagerplatz": "Blocklager",
+    "Bestand": 3456
+  },
+  {
+    "Bezeichnung": "GIBO",
+    "Artikelnummer": "1111",
+    "Lagerplatz": "Blocklager",
+    "Bestand": 2345
+  }
+]

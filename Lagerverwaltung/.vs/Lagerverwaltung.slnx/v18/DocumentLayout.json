@@ -7,12 +7,32 @@
       "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\lager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\lager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\warenkorb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\warenkorb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\lager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\lager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\allemitarbeiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\allemitarbeiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|c:\\users\\dave\\source\\repos\\abschlussprojekt\\lagerverwaltung\\lagerverwaltung\\lagerverwaltung\\mitarbeiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0266DAC2-A737-F5D2-BCEB-D60E9C555902}|Lagerverwaltung\\Lagerverwaltung.csproj|solutionrelative:lagerverwaltung\\mitarbeiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,33 +52,98 @@
               "RelativeDocumentMoniker": "Lagerverwaltung\\Program.cs",
               "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Program.cs",
               "RelativeToolTip": "Lagerverwaltung\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAqwBYAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFAAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T13:35:11.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "AlleMitarbeiter.cs",
+              "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\AlleMitarbeiter.cs",
+              "RelativeDocumentMoniker": "Lagerverwaltung\\AlleMitarbeiter.cs",
+              "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\AlleMitarbeiter.cs",
+              "RelativeToolTip": "Lagerverwaltung\\AlleMitarbeiter.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T12:33:35.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Mitarbeiter.cs",
+              "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Mitarbeiter.cs",
+              "RelativeDocumentMoniker": "Lagerverwaltung\\Mitarbeiter.cs",
+              "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Mitarbeiter.cs",
+              "RelativeToolTip": "Lagerverwaltung\\Mitarbeiter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T12:33:51.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Admin.cs",
+              "RelativeDocumentMoniker": "Lagerverwaltung\\Admin.cs",
+              "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Admin.cs",
+              "RelativeToolTip": "Lagerverwaltung\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T12:33:14.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Login.cs",
+              "RelativeDocumentMoniker": "Lagerverwaltung\\Login.cs",
+              "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Login.cs",
+              "RelativeToolTip": "Lagerverwaltung\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T12:34:08.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Material.cs",
               "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Material.cs",
               "RelativeDocumentMoniker": "Lagerverwaltung\\Material.cs",
               "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Material.cs",
               "RelativeToolTip": "Lagerverwaltung\\Material.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T13:35:56.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Warenkorb.cs",
+              "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Warenkorb.cs",
+              "RelativeDocumentMoniker": "Lagerverwaltung\\Warenkorb.cs",
+              "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Warenkorb.cs",
+              "RelativeToolTip": "Lagerverwaltung\\Warenkorb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T13:03:15.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Lager.cs",
               "DocumentMoniker": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Lager.cs",
               "RelativeDocumentMoniker": "Lagerverwaltung\\Lager.cs",
               "ToolTip": "C:\\Users\\Dave\\source\\repos\\AbschlussProjekt\\Lagerverwaltung\\Lagerverwaltung\\Lagerverwaltung\\Lager.cs",
               "RelativeToolTip": "Lagerverwaltung\\Lager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAClAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T13:22:29.015Z",
               "EditorCaption": ""

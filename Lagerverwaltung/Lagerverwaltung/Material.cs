@@ -1,26 +1,48 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.Json;
 
 namespace Lagerverwaltung
 {
     internal class Material
     {
-        public string Name { get; set; }
+        //public Guid Id { get; set; }
+        public string Bezeichnung { get; set; }
         public string Artikelnummer { get; set; }
         public string Lagerplatz { get; set; }
-		public int Menge { get; set; }
-        public int Bestand { get; set; }    
+        public int Bestand { get; set; }
 
-		public Material(string name, string artikelnummer,string lagerplatz, int menge, int bestand)
+        public static string FilePath { get; } = "Material.json";
+        public static List<Material> MaterialListe { get; private set; } = new List<Material>();
+
+        public Material() { }
+
+        public Material(string bezeichnung, string artikelnummer, string lagerplatz,  int bestand)
         {
-            Name = name;
+            //Id = Guid.NewGuid();
+            Bezeichnung = bezeichnung;
             Artikelnummer = artikelnummer;
             Lagerplatz = lagerplatz;
-			Menge = menge;
             Bestand = bestand;
-		}
-	}
+        }
+
+        public static void LadeDaten()
+        {
+            if (System.IO.File.Exists(FilePath))
+            {
+                var json = System.IO.File.ReadAllText(FilePath);
+                MaterialListe = JsonSerializer.Deserialize<List<Material>>(json) ?? new List<Material>();
+            }
+            else
+            {
+                MaterialListe = new List<Material>();
+            }
+        }
+
+        public static void SpeichereDaten()
+        {
+            var json = JsonSerializer.Serialize(MaterialListe, new JsonSerializerOptions { WriteIndented = true });
+            System.IO.File.WriteAllText(FilePath, json);
+        }
+    }
 }
