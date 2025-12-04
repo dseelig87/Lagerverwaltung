@@ -8,15 +8,15 @@ namespace Lagerverwaltung
 {
     internal class Program
     {
-        
+        static public string filePath = "Warenkorb.json";
 
 		static Lager großesLager = new Lager();
-		static public List<Mitarbeiter> mitarbeiterListe = new List<Mitarbeiter>();
 
-
-
-
-		static void Main(string[] args)
+		
+        
+        
+        
+        static void Main(string[] args)
         {
             bool laufend = true;
 
@@ -34,10 +34,9 @@ namespace Lagerverwaltung
 
 
 			}
-
-			
 			
 
+            
 		}
     }
 }

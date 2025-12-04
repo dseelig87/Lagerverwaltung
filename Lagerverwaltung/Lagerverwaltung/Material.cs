@@ -8,15 +8,15 @@ namespace Lagerverwaltung
 {
     internal class Material
     {
-        public string Bezeichnug { get; set; }
+        public string Name { get; set; }
         public string Artikelnummer { get; set; }
         public string Lagerplatz { get; set; }
 		public int Menge { get; set; }
         public int Bestand { get; set; }    
 
-		public Material(string bezeichnung, string artikelnummer,string lagerplatz, int menge, int bestand)
+		public Material(string name, string artikelnummer,string lagerplatz, int menge, int bestand)
         {
-            Bezeichnug = bezeichnung;
+            Name = name;
             Artikelnummer = artikelnummer;
             Lagerplatz = lagerplatz;
 			Menge = menge;
