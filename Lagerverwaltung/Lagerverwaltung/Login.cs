@@ -14,8 +14,8 @@ namespace Lagerverwaltung
         {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Green;
-			Console.WriteLine("   ========== Login =========");
-            Console.WriteLine("_________________________________");
+			Console.WriteLine("   <<<<<><><><>>>>> Login <<<<<><><><>>>>>");
+            Console.WriteLine("______________________________________________");
             Console.ResetColor();
 			
 

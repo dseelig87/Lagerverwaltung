@@ -7,14 +7,8 @@
   },
   {
     "Bezeichnung": "Paletten",
-    "Artikelnummer": "22222",
+    "Artikelnummer": "2222",
     "Lagerplatz": "Blocklager",
     "Bestand": 3456
-  },
-  {
-    "Bezeichnung": "GIBO",
-    "Artikelnummer": "1111",
-    "Lagerplatz": "Blocklager",
-    "Bestand": 2345
   }
 ]

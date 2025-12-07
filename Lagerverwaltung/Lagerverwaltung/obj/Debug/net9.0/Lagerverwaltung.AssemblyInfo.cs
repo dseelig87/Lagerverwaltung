@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lagerverwaltung")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20661915e43c9870440006aa8102e9e4f63f48c4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c37d8fefdd9f8af5901b982b08ab21244259e94e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lagerverwaltung")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lagerverwaltung")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

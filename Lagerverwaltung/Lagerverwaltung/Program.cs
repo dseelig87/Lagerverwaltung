@@ -17,12 +17,12 @@ namespace Lagerverwaltung
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Green;
-				Console.WriteLine("   <><><><><><><><><><>-- Lagerverwaltung --<><><><><><><><><><>");
+				Console.WriteLine("                <<<<<><><><>>>>> Lagerverwaltung <<<<<><><><>>>>>");
+                Console.WriteLine("--------------------------------------------------------------------------");
                 Console.ResetColor();
-				Console.WriteLine("_____________________________________________________________________");
-				Console.WriteLine("\n\n1. Login");
-                Console.WriteLine("\n2. Beenden");
-                Console.Write("\nBitte wählen: ");
+				Console.WriteLine("\n1. Login");
+                Console.WriteLine("2. Beenden");
+                Console.Write("Bitte wählen Sie eine Option: ");
                 var wahl = Console.ReadLine();
 
                 if (wahl == "1")
@@ -33,7 +33,7 @@ namespace Lagerverwaltung
                     if (user.IstAdmin) AdminMenu(user);
                     else MitarbeiterMenu(user);
 
-                    
+                    // nach Aktionen persistieren
                     Material.SpeichereDaten();
                     AlleMitarbeiter.SpeichereDaten();
                 }
@@ -47,14 +47,16 @@ namespace Lagerverwaltung
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"=== Admin Bereich ({user.Username}) ===");
+                Console.WriteLine($"<<<<<><><><>>>>> Admin Bereich ({user.Username}) <<<<<><><><>>>>>");
                 Console.ResetColor();
 				Console.WriteLine("\n1. Material anzeigen");
                 Console.WriteLine("2. Material hinzufügen");
-                Console.WriteLine("3. Benutzer anzeigen");
-                Console.WriteLine("4. Benutzer hinzufügen");
-                Console.WriteLine("5. Benutzer löschen");
-                Console.WriteLine("6. Logout");
+                Console.WriteLine("3. Material bearbeiten");
+                Console.WriteLine("4. Material löschen");
+                Console.WriteLine("5. Benutzer anzeigen");
+                Console.WriteLine("6. Benutzer hinzufügen");
+                Console.WriteLine("7. Benutzer löschen");
+                Console.WriteLine("8. Logout");
                 Console.Write("Auswahl: ");
 
                 var input = Console.ReadLine();
@@ -66,31 +68,29 @@ namespace Lagerverwaltung
                     case "2":
                         Console.Write("Name: ");
                         var name = Console.ReadLine();
-
+                        Console.Write("Menge: ");
+                        var menge = int.Parse(Console.ReadLine() ?? "0");
                         Console.Write("Lagerplatz: ");
                         var lp = Console.ReadLine();
                         Console.Write("Artikelnummer: ");
                         var an = Console.ReadLine();
-
-						//Püfen ob artikelnummer schon existiert
-                        if (Material.MaterialListe.Any(m => m.Artikelnummer == an))
-                        {
-                            Console.WriteLine("Artikelnummer existiert bereits. Vorgang abgebrochen.");
-                            Console.ReadKey();
-                            break;
-						}
-
-						Console.Write("Bestand: ");
+                        Console.Write("Bestand: ");
                         var bestand = int.Parse(Console.ReadLine() ?? "0");
-                        lager.FuegeMaterialHinzu(name, lp, an, bestand);
+                        lager.FuegeMaterialHinzu(name, menge, lp, an, bestand);
                         break;
                     case "3":
+                        lager.BearbeiteMaterial();
+                        break;
+                    case "4":
+                        lager.LoescheMaterial();
+                        break;
+                    case "5":
                         Console.Clear();
                         foreach (var b in AlleMitarbeiter.BenutzerListe)
                             Console.WriteLine($"{b.Username} (Admin: {b.IstAdmin})");
                         Console.ReadKey();
                         break;
-                    case "4":
+                    case "6":
                         Console.Write("Username: ");
                         var u = Console.ReadLine();
                         Console.Write("Passwort: ");
@@ -98,7 +98,7 @@ namespace Lagerverwaltung
                         AlleMitarbeiter.BenutzerListe.Add(new AlleMitarbeiter(u, p, false));
                         AlleMitarbeiter.SpeichereDaten();
                         break;
-                    case "5":
+                    case "7":
                         Console.Clear();
                         for (int i = 0; i < AlleMitarbeiter.BenutzerListe.Count; i++)
                             Console.WriteLine($"{i + 1}. {AlleMitarbeiter.BenutzerListe[i].Username} (Admin:{AlleMitarbeiter.BenutzerListe[i].IstAdmin})");
@@ -109,8 +109,12 @@ namespace Lagerverwaltung
                             AlleMitarbeiter.SpeichereDaten();
                         }
                         break;
-                    case "6":
+                    case "8":
                         return;
+                    default:
+                        Console.WriteLine("Ungültige Eingabe!");
+                        Console.ReadKey();
+                        break;
                 }
             }
         }
@@ -121,7 +125,7 @@ namespace Lagerverwaltung
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Green;
-				Console.WriteLine($"=== Mitarbeiter Bereich ({user.Username}) ===");
+				Console.WriteLine($"<<<<<><><><>>>>> Mitarbeiter Bereich ({user.Username}) <<<<<><><><>>>>>");
                 Console.ResetColor();
 				Console.WriteLine("\n1. Material anzeigen");
                 Console.WriteLine("2. Zum Warenkorb hinzufügen");

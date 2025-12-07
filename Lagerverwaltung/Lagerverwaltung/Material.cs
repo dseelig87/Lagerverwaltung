@@ -6,7 +6,7 @@ namespace Lagerverwaltung
 {
     internal class Material
     {
-        //public Guid Id { get; set; }
+        
         public string Bezeichnung { get; set; }
         public string Artikelnummer { get; set; }
         public string Lagerplatz { get; set; }
@@ -19,7 +19,7 @@ namespace Lagerverwaltung
 
         public Material(string bezeichnung, string artikelnummer, string lagerplatz,  int bestand)
         {
-            //Id = Guid.NewGuid();
+            
             Bezeichnung = bezeichnung;
             Artikelnummer = artikelnummer;
             Lagerplatz = lagerplatz;

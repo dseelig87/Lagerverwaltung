@@ -14,5 +14,13 @@
     "Warenkorb": {
       "Items": []
     }
+  },
+  {
+    "Username": "Giaco",
+    "Password": "12345",
+    "IstAdmin": false,
+    "Warenkorb": {
+      "Items": []
+    }
   }
 ]
