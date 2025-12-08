@@ -33,7 +33,7 @@ namespace Lagerverwaltung
                     if (user.IstAdmin) AdminMenu(user);
                     else MitarbeiterMenu(user);
 
-                    // nach Aktionen persistieren
+                    
                     Material.SpeichereDaten();
                     AlleMitarbeiter.SpeichereDaten();
                 }
@@ -68,15 +68,13 @@ namespace Lagerverwaltung
                     case "2":
                         Console.Write("Name: ");
                         var name = Console.ReadLine();
-                        Console.Write("Menge: ");
-                        var menge = int.Parse(Console.ReadLine() ?? "0");
                         Console.Write("Lagerplatz: ");
                         var lp = Console.ReadLine();
                         Console.Write("Artikelnummer: ");
                         var an = Console.ReadLine();
                         Console.Write("Bestand: ");
                         var bestand = int.Parse(Console.ReadLine() ?? "0");
-                        lager.FuegeMaterialHinzu(name, menge, lp, an, bestand);
+                        lager.NeuesMaterialHinzu(name, lp, an, bestand);
                         break;
                     case "3":
                         lager.BearbeiteMaterial();
@@ -112,8 +110,10 @@ namespace Lagerverwaltung
                     case "8":
                         return;
                     default:
-                        Console.WriteLine("Ungültige Eingabe!");
-                        Console.ReadKey();
+                        Console.ForegroundColor = ConsoleColor.Red;
+						Console.WriteLine("\aUngültige Eingabe!");
+                        Console.ResetColor();
+						Console.ReadKey();
                         break;
                 }
             }
@@ -126,19 +126,22 @@ namespace Lagerverwaltung
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Green;
 				Console.WriteLine($"<<<<<><><><>>>>> Mitarbeiter Bereich ({user.Username}) <<<<<><><><>>>>>");
+                Console.WriteLine("---------------------------------------------------------------------------");
                 Console.ResetColor();
 				Console.WriteLine("\n1. Material anzeigen");
                 Console.WriteLine("2. Zum Warenkorb hinzufügen");
                 Console.WriteLine("3. Warenkorb anzeigen / Checkout");
                 Console.WriteLine("4. Logout");
-                Console.Write("Auswahl: ");
+                Console.Write("\nAuswahl: ");
 
                 var input = Console.ReadLine();
                 switch (input)
                 {
                     case "1":
                         lager.ZeigeMaterial();
-                        break;
+                        Console.WriteLine("\nDücke Enter um Fortzufahren" );
+                        Console.ReadKey();
+						break;
                     case "2":
                         lager.ZeigeMaterial();
                         Console.Write("Nummer wählen: ");
@@ -159,8 +162,10 @@ namespace Lagerverwaltung
                         Console.Clear();
                         if (user.Warenkorb.Items.Count == 0)
                         {
-                            Console.WriteLine("Warenkorb ist leer.");
-                            Console.ReadKey();
+                            Console.ForegroundColor = ConsoleColor.Red;
+							Console.WriteLine("\aWarenkorb ist leer.");
+                            Console.ResetColor();
+							Console.ReadKey();
                             break;
                         }
                         foreach (var pos in user.Warenkorb.Items)

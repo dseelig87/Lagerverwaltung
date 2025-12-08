@@ -5,7 +5,7 @@ namespace Lagerverwaltung
 {
     internal class Lager
     {
-        public void FuegeMaterialHinzu(string name, int menge, string lagerplatz, string artikelnummer, int bestand)
+        public void NeuesMaterialHinzu(string name, string lagerplatz, string artikelnummer, int bestand)
         {
             if (string.IsNullOrWhiteSpace(name) || bestand < 0)
             {
@@ -42,7 +42,7 @@ namespace Lagerverwaltung
                 }
             }
 
-            Console.ReadKey();
+            
         }
 
         public void BearbeiteMaterial()
