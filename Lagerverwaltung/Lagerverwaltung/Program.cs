@@ -64,7 +64,9 @@ namespace Lagerverwaltung
                 {
                     case "1":
                         lager.ZeigeMaterial();
-                        break;
+                        Console.WriteLine("\nDücke Enter um Fortzufahren" ); 
+                        Console.ReadKey();
+						break;
                     case "2":
                         Console.Write("Name: ");
                         var name = Console.ReadLine();
